@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Üye Kayıt</a></li>
+            <li><a href="/liste">Kullanıcı Listesi</a></li>
+            <li><a href="/bakiye">Bakiye Yükle</a></li>
+        </ul>
+    </nav>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <form action="/bakiye" method="post">
+        <label for="email">E-posta:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="bakiye">Bakiye</label><br>
+        <input type="bakiye" id="bakiye" name="bakiye"><br>
+        <br>
+        <input type="submit"><br>
+    </form>
+</body>
+</html>
